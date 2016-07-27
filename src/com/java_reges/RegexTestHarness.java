@@ -11,7 +11,8 @@ import java.util.regex.Matcher;
 		23.45.12.56
 		this is simplified to handle any 999.888......
 		^\d{1,3}(\.(\d{1,3})){3}$
-		String pattern = "^\\d{1,3}(\\.(\\d{1,3})){3}$"
+		String pattern = "^\\d{1,3}(\\.(\\d{1,3})){3}$" ok too
+		String pattern = "^\\d{1,3}(\\.\\d{1,3}){3}$"; better
 		
 		this is complete to reject 666.666.23......
 ^25[0-5]|2[0-4]\d|1\d{2}|\d?\d(\.(25[0-5]|2[0-4]\d|1\d{2}|\d?\d)){3}$
